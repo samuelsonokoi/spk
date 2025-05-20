@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { ROUTE_CONSTANTS } from './core/enums/route-constants';
+import { ROUTE_CONSTANTS } from './core/constants/route.constants';
 
 export const routes: Routes = [
   {
@@ -10,8 +10,9 @@ export const routes: Routes = [
   {
     path: ROUTE_CONSTANTS.DASHBOARD,
     loadComponent: () =>
-      import('./components/dashboard/dashboard.component').then(
+      import('./pages/dashboard/dashboard.component').then(
         (c) => c.DashboardComponent
       ),
   },
+  { path: '**', redirectTo: '' },
 ];

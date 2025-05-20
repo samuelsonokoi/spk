@@ -1,0 +1,40 @@
+<aside [ngClass]="{'collapsed': sidebarCollapsed}">
+  <nav class="nav-top" aria-label="nav-top">
+    <ul>
+      @for (item of topSidebarMenuItems; track $index) {
+      <li [ngClass]="{'active': item.active}">
+        <img [src]="item.icon" [alt]="item.label" />
+        <span *ngIf="!sidebarCollapsed" class="sidebar-labels">{{item.label}}</span>
+      </li>
+      }
+    </ul>
+  </nav>
+
+  <nav class="sidebar-bottom" aria-label="nav-bottom">
+    <ul>
+      @for (item of bottomSidebarMenuItems; track $index) {
+      <li [ngClass]="{'active': item.active}">
+        <img [src]="item.icon" alt="MENU" />
+        <span *ngIf="!sidebarCollapsed" class="sidebar-labels">{{item.label}}</span>
+      </li>
+      }
+    </ul>
+    <img src="images/sidebar-divider.svg" alt="sidebar divider" />
+    <div class="profile">
+      <div class="user-details">
+        <img src="images/avatar.svg" alt="avatar" />
+        <div class="user-data" *ngIf="!sidebarCollapsed">
+          <p>Lorem</p>
+          <p>Lorem</p>
+        </div>
+      </div>
+      <button *ngIf="!sidebarCollapsed">
+        <img src="images/icon-wrapper.svg" alt="logout button" />
+      </button>
+    </div>
+  </nav>
+
+  <button class="collapseButton" (click)="toggleSidebarVisibility()">
+    <img src="images/left-arrow.svg" alt="left arrow button" />
+  </button>
+</aside>

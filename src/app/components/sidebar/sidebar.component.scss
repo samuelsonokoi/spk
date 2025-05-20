@@ -1,0 +1,127 @@
+aside {
+  min-height: 100vh;
+  width: 16rem;
+  padding: 28px 16px;
+  border-radius: 12px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 16px 18px 0px #0000000F;
+  position: fixed;
+
+  &.collapsed {
+    width: 5rem;
+
+    .collapseButton {
+      transform: rotate(180deg);
+    }
+  }
+
+  .nav-top ul, .sidebar-bottom ul {
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    transition: all 0.5ms linear;
+
+    &:hover {
+      color: #000;
+      cursor: pointer;
+      background-color: #E9FAF0;
+
+    }
+  }
+}
+
+.active {
+  background-color: #E9FAF0;
+  color: #000;
+  
+  svg {
+    fill: #000;
+  }
+}
+
+.sidebar-labels {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.sidebar-bottom {
+  padding-right: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+  }
+}
+
+.user-details {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+
+  .user.data {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      width: fit-content;
+      font-size: 15px;
+      color: #525D73;
+    }
+  }
+}
+
+.collapseButton {
+  width: 32;
+  height: 32;
+  gap: 10px;
+  border-radius: 100%;
+  padding: 9px 12px;
+  padding-left: 12px;
+  border: 3px solid #F0F1F3;
+  background-color: #00732E;
+  box-shadow: 0px 1px 4px 0px #0C0C0D0D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -1.1rem;
+  transition: all 1ms linear;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  svg {
+    width: 5.4px;
+    height: 10.8px;
+    border-width: 1.8px;
+  }
+}
