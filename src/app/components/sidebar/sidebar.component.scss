@@ -39,7 +39,6 @@ aside {
       color: #000;
       cursor: pointer;
       background-color: #E9FAF0;
-
     }
   }
 }
@@ -47,10 +46,6 @@ aside {
 .active {
   background-color: #E9FAF0;
   color: #000;
-  
-  svg {
-    fill: #000;
-  }
 }
 
 .sidebar-labels {
@@ -77,6 +72,10 @@ aside {
     outline: none;
     border: 0;
     background-color: transparent;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -119,9 +118,35 @@ aside {
     cursor: pointer;
   }
 
-  svg {
+  img {
     width: 5.4px;
     height: 10.8px;
     border-width: 1.8px;
   }
+}
+
+.mobile-menu-wrapper {
+  padding: 28px 16px;
+}
+
+.hamburger-menu { 
+  display: flex; 
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+  
+  img {
+    width: 2rem;
+    height: 1.4rem;
+  } 
+}
+
+@media only screen and (max-width: 600px) {
+  aside { visibility: hidden; }
+
+  .hamburger-menu { visibility: visible; }
 }
