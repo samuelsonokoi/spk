@@ -126,14 +126,17 @@ aside {
 }
 
 .mobile-menu-wrapper {
-  padding: 28px 16px;
+  position: relative;
+  display: none;
 }
 
 .hamburger-menu { 
   display: flex; 
-  visibility: hidden;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 
   &:hover {
     cursor: pointer;
@@ -146,7 +149,7 @@ aside {
 }
 
 @media only screen and (max-width: 600px) {
-  aside { visibility: hidden; }
+  aside { display: none; }
 
-  .hamburger-menu { visibility: visible; }
+  .mobile-menu-wrapper { display: block; }
 }

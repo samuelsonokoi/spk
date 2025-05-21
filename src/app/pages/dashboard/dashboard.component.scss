@@ -1,12 +1,14 @@
 section {
   display: flex;
   min-height: 100vh;
-  gap: 35px;
+  gap: 30px;
   background-color: #fafafa;
 }
 
 main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25.063rem 1fr;
+  width: 100%;
   gap: 20px;
   padding: 27px 0;
 }

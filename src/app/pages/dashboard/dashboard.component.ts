@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { SidebarComponent } from '../../components/sidebar/sidebar.component';
 import { SidebarLinks } from '../../core/models/sidebar-links.model';
 import { DescriptionsComponent } from '../../components/descriptions/descriptions.component';
+import { DetailCardComponent } from '../../components/detail-card/detail-card.component';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [SidebarComponent, DescriptionsComponent],
+  imports: [SidebarComponent, DescriptionsComponent, DetailCardComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
 })
