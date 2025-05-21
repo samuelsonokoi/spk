@@ -1,0 +1,85 @@
+article {
+  width: 25.063rem;
+  height: 95vh;
+  gap: 2.5rem;
+  border-radius: 15px;
+  padding: 20px 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  box-shadow: 0px 1px 3px 0px #0000000D;
+
+
+  h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 1%;
+    text-transform: capitalize;
+    color: #02983E;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 1%;
+    text-transform: capitalize;
+    color: #525D73;
+  }
+
+}
+.border-top-bottom {
+  border-top: 1px solid #E0E2E7;
+  border-bottom: 1px solid #E0E2E7;
+}
+
+.item-list {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+  padding: .5rem 0;
+}
+
+.item-heading {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1%;
+  text-transform: capitalize;
+  color: #525D73;
+}
+
+.item-data {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1%;
+  text-transform: capitalize;
+  color: #525D73
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.remidiation-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.remidiation-heading {
+  color: #334155;
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1%;
+  text-transform: capitalize;
+  margin-top: .5rem;
+}

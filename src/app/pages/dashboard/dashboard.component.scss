@@ -1,6 +1,12 @@
 section {
   display: flex;
-  min-height: 100%;
-  gap: 2.188rem;
+  min-height: 100vh;
+  gap: 35px;
   background-color: #fafafa;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  padding: 27px 0;
 }

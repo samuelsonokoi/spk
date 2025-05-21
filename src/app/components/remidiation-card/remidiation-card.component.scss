@@ -1,0 +1,100 @@
+
+.remidiation  {
+  padding-top: .3rem;
+
+  .remidiation-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 15px;
+    padding: 13px 18px;
+    background-color: #fff;
+    border: 1px solid #F0F1F3;
+    box-shadow: 0px 1px 3px 0px #0000000D;
+
+
+    & > span {
+      display: block;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 1%;
+      text-transform: capitalize;
+      color: #030229;
+    }
+
+    .remidiation-box {
+      display: flex;
+      height: 64.9px;
+      gap: 16px;
+      border-radius: 8px;
+      padding: 6px 16px;
+      background-color: #FAFAFA;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+  
+      .server-wrapper {
+        height: 52.9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+  
+        .server-data {
+          display: flex;
+          gap: 3px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+    
+          .name {
+            font-weight: 600;
+            font-size: 12.15px;
+            line-height: 13.5px;
+            letter-spacing: 0px;
+            color: #404A60;
+          }
+    
+          .type {
+            font-weight: 500;
+            font-size: 9.45px;
+            line-height: 10.13px;
+            letter-spacing: 0px;
+            color: #667085;
+          }
+        }
+      }
+
+      .description {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 1%;
+        text-transform: capitalize;
+        color: #404A60;
+        border-left: 1px solid #858D9D;
+        padding-left: .5rem;
+      }
+    }
+
+    .full-description {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 1%;
+      text-transform: capitalize;
+      color: #525D73;
+      display: none;
+      transition: display 1s linear;
+
+      &.visible {
+        display: block;
+        transition: display 1s linear;
+      }
+    }
+  }
+}
