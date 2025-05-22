@@ -4,20 +4,20 @@
       <th>Asset</th>
       <th>Contextual Risk</th>
     </tr>
-    @for (item of tableData; track $index) {
+    @for (asset of tableData; track $index) {
     <tr>
       <td>
         <div>
-          <img [src]="item.image" [alt]="item.name" />
+          <img [src]="asset.image" [alt]="asset.name" />
           <div class="ip-info">
-            <span class="title">{{item.name}}</span>
-            <span class="description">{{item.ipAddress}}</span>
+            <span class="title">{{asset.name}}</span>
+            <span class="description">{{asset.ipAddress}}</span>
           </div>
         </div>
       </td>
       <td>
-        @if (item.riskBadge) {
-        <span class="pill">{{item.riskBadge}}</span>
+        @if (asset.riskBadge) {
+        <span class="pill">{{asset.riskBadge}}</span>
         }
       </td>
     </tr>

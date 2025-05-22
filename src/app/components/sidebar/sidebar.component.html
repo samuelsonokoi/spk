@@ -1,10 +1,10 @@
 <aside [ngClass]="{'collapsed': sidebarCollapsed}">
   <nav class="nav-top" aria-label="nav-top">
     <ul>
-      @for (item of topSidebarMenuItems; track $index) {
-      <li [ngClass]="{'active': item.active}">
-        <img [src]="item.icon" [alt]="item.label" />
-        <span *ngIf="!sidebarCollapsed" class="sidebar-labels">{{item.label}}</span>
+      @for (link of topSidebarMenuItems; track $index) {
+      <li [ngClass]="{'active': link.active}">
+        <img [src]="link.icon" [alt]="link.label" />
+        <span *ngIf="!sidebarCollapsed" class="sidebar-labels">{{link.label}}</span>
       </li>
       }
     </ul>
@@ -12,10 +12,10 @@
 
   <nav class="sidebar-bottom" aria-label="nav-bottom">
     <ul>
-      @for (item of bottomSidebarMenuItems; track $index) {
-      <li [ngClass]="{'active': item.active}">
-        <img [src]="item.icon" alt="MENU" />
-        <span *ngIf="!sidebarCollapsed" class="sidebar-labels">{{item.label}}</span>
+      @for (link of bottomSidebarMenuItems; track $index) {
+      <li [ngClass]="{'active': link.active}">
+        <img [src]="link.icon" alt="MENU" />
+        <span *ngIf="!sidebarCollapsed" class="sidebar-labels">{{link.label}}</span>
       </li>
       }
     </ul>

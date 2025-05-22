@@ -3,12 +3,12 @@
 
   <div class="risk-wrapper">
     <div class="legend">
-      @for (item of legend; track $index) {
+      @for (legendItem of legend; track $index) {
       <div>
         <span class="dot"
-          [ngClass]="{'critical': item.status === ASSET_STATUS.CRITICAL, 'high': item.status === ASSET_STATUS.HIGH, 'medium': item.status === ASSET_STATUS.MEDIUM, 'low': item.status === ASSET_STATUS.LOW}"></span>
-        <span class="risk">{{item.riskNumber}}</span>
-        <span class="status">{{item.status}}</span>
+          [ngClass]="{'critical': legendItem.status === ASSET_STATUS.CRITICAL, 'high': legendItem.status === ASSET_STATUS.HIGH, 'medium': legendItem.status === ASSET_STATUS.MEDIUM, 'low': legendItem.status === ASSET_STATUS.LOW}"></span>
+        <span class="risk">{{legendItem.riskNumber}}</span>
+        <span class="status">{{legendItem.status}}</span>
       </div>
       }
     </div>
