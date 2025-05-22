@@ -98,3 +98,10 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .chart {
+    margin-top: 1rem;
+    overflow-y: scroll;
+  }
+}

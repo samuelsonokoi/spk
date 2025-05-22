@@ -2,6 +2,7 @@
   border-radius: 15px;
   border: 1px solid #f0f1f3;
   box-shadow: 0px 1px 3px 0px #0000000d;
+  overflow-x: scroll;
 }
 
 table {
@@ -98,5 +99,20 @@ table {
     line-height: 10.13px;
     letter-spacing: 0px;
     color: #667085;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  &:host {
+    .table-wrapper {
+      width: 100%;
+      overflow-x: scroll;
+
+      table {
+        th {
+          padding: 12px;
+        }
+      }
+    }
   }
 }

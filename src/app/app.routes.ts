@@ -14,5 +14,5 @@ export const routes: Routes = [
         (c) => c.DashboardComponent
       ),
   },
-  { path: '**', redirectTo: '' },
+  { path: '**', redirectTo: `/${ROUTE_CONSTANTS.DASHBOARD}` },
 ];
