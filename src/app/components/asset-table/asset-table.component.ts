@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Asset } from '../../core/models/asset.model';
 
 @Component({
   selector: 'app-asset-table',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
   templateUrl: './asset-table.component.html',
   styleUrl: './asset-table.component.scss',
 })
-export class AssetTableComponent {}
+export class AssetTableComponent {
+  @Input({ required: true }) tableData!: Asset[];
+}

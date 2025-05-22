@@ -302,6 +302,10 @@ h3 {
 
   img {
     margin: 0;
+
+    &:first-child {
+      margin-bottom: -1px;
+    }
   }
 }
 
@@ -336,7 +340,7 @@ h3 {
       box-shadow: 0px 4px 4px 0px #00000040;
       width: 362px;
       height: 121.69px;
-      top: -2rem;
+      top: -1.5rem;
       left: 13.5rem;
 
       & > div {
@@ -623,19 +627,22 @@ h3 {
 @media only screen and (max-width: 600px) {
   section {
     padding: 15px;
-    display: block;
+    display: flex;
     margin-top: 1rem;
     overflow-y: scroll;
 
     .asset-flow {
-      padding: 8px 10px 5px 10px;
+      padding: 8px 10px 15px 10px;
       display: block;
-      overflow-x: scroll;
+      overflow: scroll;
       margin-bottom: 10px;
+      height: auto;
     }
 
     .chart-wrapper {
       overflow-x: scroll;
+      display: flex;
+      flex-direction: column;
     }
   }
 }

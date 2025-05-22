@@ -4,39 +4,29 @@
       <th>Asset</th>
       <th>Contextual Risk</th>
     </tr>
+    @for (item of tableData; track $index) {
     <tr>
       <td>
         <div>
-          <img src="images/server.svg" alt="server" />
+          <img [src]="item.image" [alt]="item.name" />
           <div class="ip-info">
-            <span class="title">Loremipsumdolorsit</span>
-            <span class="description">192.168.1.1</span>
+            <span class="title">{{item.name}}</span>
+            <span class="description">{{item.ipAddress}}</span>
           </div>
         </div>
       </td>
       <td>
-        <span class="pill">Critical</span>
+        @if (item.riskBadge) {
+        <span class="pill">{{item.riskBadge}}</span>
+        }
       </td>
     </tr>
-    <tr>
-      <td>
-        <div>
-          <img src="images/server.svg" alt="server" />
-          <div class="ip-info">
-            <span class="title">Loremipsumdolorsit002</span>
-            <span class="description">192.168.1.2</span>
-          </div>
-        </div>
-      </td>
-      <td>
-        <span class="pill">Critical</span>
-      </td>
-    </tr>
+    }
     <tr>
       <td colspan="2">
         <div class="pagination">
           <img src="images/chevron_left.svg" alt="left" />
-          <span>Showing 1-2 of 2</span>
+          <span>Showing 1-{{tableData.length}} of {{tableData.length}}</span>
           <img src="images/chevron_right.svg" alt="right" />
         </div>
       </td>
