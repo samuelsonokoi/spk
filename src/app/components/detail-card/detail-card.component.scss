@@ -620,202 +620,22 @@ h3 {
   gap: 20px;
 }
 
-.table-wrapper {
-  border-radius: 15px;
-  border: 1px solid #f0f1f3;
-  box-shadow: 0px 1px 3px 0px #0000000d;
-}
-
-table {
-  border-collapse: collapse;
-
-  th {
-    color: #858d9d;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
-    padding: 12px 24px;
-    text-align: start;
-
-    &:last-child {
-      padding: 12px 17px;
-    }
-  }
-
-  tr {
-    border-top: 1px solid #f0f1f3;
-
-    &:first-child {
-      border-top: none;
-    }
-  }
-
-  td {
-    padding: 12px 24px;
-
-    div {
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      gap: 8.1px;
-
-      img {
-        height: 45px;
-        width: 45px;
-      }
-    }
-
-    .pagination {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      img {
-        height: 24px;
-        width: 24px;
-      }
-
-      span {
-        color: #667085;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 20px;
-        letter-spacing: 0px;
-      }
-    }
-
-    .pill {
-      background-color: #ffe2e0;
-      color: #c6190d;
-      padding: 4px 16px;
-      border-radius: 38px;
-      font-weight: 700;
-      font-size: 15px;
-      line-height: 22px;
-      letter-spacing: 1%;
-      text-transform: capitalize;
-    }
-  }
-}
-
-.ip-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  gap: 4px;
-
-  .title {
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 13.5px;
-    letter-spacing: 0px;
-    text-transform: capitalize;
-    color: #525d73;
-  }
-
-  .description {
-    font-weight: 500;
-    font-size: 9.45px;
-    line-height: 10.13px;
-    letter-spacing: 0px;
-    color: #667085;
-  }
-}
-
-.chart {
-  box-shadow: 0px 2.9px 4px 0px #0000000d;
-  border-radius: 20px;
-  padding: 10px 30px 0 30px;
-  border: 1.1px solid #f2f3f7;
-  width: 100%;
-
-  .heading {
-    color: #667085;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 1rem;
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 15px;
     display: block;
-  }
+    margin-top: 1rem;
+    overflow-y: scroll;
 
-  .risk-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .legend {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-
-      div {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 5px;
-      }
-
-      .dot {
-        width: 7px;
-        height: 7px;
-        border-radius: 100%;
-      }
-
-      .critical {
-        background-color: #c6190d;
-      }
-
-      .high {
-        background-color: #e5372b;
-      }
-
-      .medium {
-        background-color: #eba622;
-      }
-
-      .low {
-        background-color: #08b94e;
-      }
-
-      .risk {
-        font-family: "Inter", sans-serif;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        text-transform: capitalize;
-        color: #383874;
-      }
-
-      .status {
-        color: #383874;
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        text-transform: capitalize;
-      }
+    .asset-flow {
+      padding: 8px 10px 5px 10px;
+      display: block;
+      overflow-x: scroll;
     }
 
-    .donut {
-      height: 160px;
-      width: 160px;
-      border: 0.5rem solid #c6190d;
-      border-radius: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      span {
-        color: #656575;
-        font-family: "Inter", sans-serif;
-        font-weight: 600;
-        font-size: 35px;
-        line-height: 28px;
-        letter-spacing: 0%;
-      }
+    .chart-wrapper {
+      display: block;
+      overflow-x: scroll;
     }
   }
 }

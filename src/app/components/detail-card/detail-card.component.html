@@ -180,84 +180,9 @@
   <h3>Lorem ipsum dolor sit</h3>
 
   <div class="chart-wrapper">
-    <div class="table-wrapper">
-      <table>
-        <tr>
-          <th>Asset</th>
-          <th>Contextual Risk</th>
-        </tr>
-        <tr>
-          <td>
-            <div>
-              <img src="images/server.svg" alt="server" />
-              <div class="ip-info">
-                <span class="title">Loremipsumdolorsit</span>
-                <span class="description">192.168.1.1</span>
-              </div>
-            </div>
-          </td>
-          <td>
-            <span class="pill">Critical</span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div>
-              <img src="images/server.svg" alt="server" />
-              <div class="ip-info">
-                <span class="title">Loremipsumdolorsit002</span>
-                <span class="description">192.168.1.2</span>
-              </div>
-            </div>
-          </td>
-          <td>
-            <span class="pill">Critical</span>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <div class="pagination">
-              <img src="images/chevron_left.svg" alt="left" />
-              <span>Showing 1-2 of 2</span>
-              <img src="images/chevron_right.svg" alt="right" />
-            </div>
-          </td>
-        </tr>
-      </table>
-    </div>
+    <app-asset-table />
 
-    <div class="chart">
-      <span class="heading">Contextual Risk</span>
-
-      <div class="risk-wrapper">
-        <div class="legend">
-          <div>
-            <span class="dot critical"></span>
-            <span class="risk">2</span>
-            <span class="status">Critical</span>
-          </div>
-          <div>
-            <span class="dot high"></span>
-            <span class="risk">0</span>
-            <span class="status">High</span>
-          </div>
-          <div>
-            <span class="dot medium"></span>
-            <span class="risk">0</span>
-            <span class="status">Medium</span>
-          </div>
-          <div>
-            <span class="dot low"></span>
-            <span class="risk">0</span>
-            <span class="status">Low</span>
-          </div>
-        </div>
-
-        <div class="donut">
-          <span>2</span>
-        </div>
-      </div>
-    </div>
+    <app-chart />
   </div>
 
 </section>

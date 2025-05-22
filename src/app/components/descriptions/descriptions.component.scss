@@ -8,8 +8,7 @@ article {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  box-shadow: 0px 1px 3px 0px #0000000D;
-
+  box-shadow: 0px 1px 3px 0px #0000000d;
 
   h3 {
     font-weight: 700;
@@ -17,7 +16,7 @@ article {
     line-height: 22px;
     letter-spacing: 1%;
     text-transform: capitalize;
-    color: #02983E;
+    color: #02983e;
     margin-bottom: 10px;
   }
 
@@ -27,13 +26,13 @@ article {
     line-height: 21px;
     letter-spacing: 1%;
     text-transform: capitalize;
-    color: #525D73;
+    color: #525d73;
   }
-
 }
+
 .border-top-bottom {
-  border-top: 1px solid #E0E2E7;
-  border-bottom: 1px solid #E0E2E7;
+  border-top: 1px solid #e0e2e7;
+  border-bottom: 1px solid #e0e2e7;
 }
 
 .item-list {
@@ -41,7 +40,7 @@ article {
   gap: 20px;
   justify-content: start;
   align-items: center;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 .item-heading {
@@ -50,7 +49,7 @@ article {
   line-height: 22px;
   letter-spacing: 1%;
   text-transform: capitalize;
-  color: #525D73;
+  color: #525d73;
 }
 
 .item-data {
@@ -59,7 +58,7 @@ article {
   line-height: 22px;
   letter-spacing: 1%;
   text-transform: capitalize;
-  color: #525D73
+  color: #525d73;
 }
 
 .flex {
@@ -81,5 +80,14 @@ article {
   line-height: 22px;
   letter-spacing: 1%;
   text-transform: capitalize;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  article {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    display: block;
+  }
 }

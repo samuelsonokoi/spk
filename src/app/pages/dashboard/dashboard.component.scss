@@ -12,3 +12,16 @@ main {
   gap: 20px;
   padding: 27px 20px 27px 0;
 }
+
+@media only screen and (max-width: 600px) {
+  section {
+    min-height: 100%;
+    display: block;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    display: block;
+  }
+}
