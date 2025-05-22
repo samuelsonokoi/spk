@@ -30,4 +30,8 @@ export class ChartComponent {
     },
   ];
   ASSET_STATUS = ASSET_STATUS;
+  total = this.legend.reduce(
+    (accumulator, current) => accumulator + current.riskNumber,
+    0
+  );
 }
