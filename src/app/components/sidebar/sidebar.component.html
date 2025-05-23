@@ -1,6 +1,15 @@
-<aside [ngClass]="{'collapsed': sidebarCollapsed}">
+<div class="mobile-menu-wrapper">
+  <button class="hamburger-menu" (click)="showSideBar()">
+    <img src="images/burger-menu.svg" alt="burger-menu" />
+  </button>
+</div>
+
+<aside [ngClass]="{'collapsed': sidebarCollapsed}" id="sidebar">
   <nav class="nav-top" aria-label="nav-top">
     <ul>
+      @if (sidebarCollapsed) {
+      <img class="logo" src="images/logo-side.png" alt="sidebar logo" />
+      }
       @for (link of topSidebarMenuItems; track $index) {
       <li [ngClass]="{'active': link.active}">
         <img [src]="link.icon" [alt]="link.label" />
@@ -34,13 +43,7 @@
     </div>
   </nav>
 
-  <button class="collapseButton" (click)="toggleSidebarVisibility()">
+  <button class="collapseButton" (click)="toggleSidebarCollapse()">
     <img src="images/left-arrow.svg" alt="left arrow button" />
   </button>
 </aside>
-
-<div class="mobile-menu-wrapper">
-  <button class="hamburger-menu">
-    <img src="images/burger-menu.svg" alt="burger-menu" />
-  </button>
-</div>

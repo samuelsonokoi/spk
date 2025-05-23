@@ -84,7 +84,11 @@ article {
   margin-top: 0.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+.space-2 {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
   article {
     height: 100%;
     width: 100%;

@@ -62,8 +62,6 @@ table {
     }
 
     .pill {
-      background-color: #ffe2e0;
-      color: #c6190d;
       padding: 4px 16px;
       border-radius: 38px;
       font-weight: 700;
@@ -73,6 +71,26 @@ table {
       text-transform: capitalize;
     }
   }
+}
+
+.critical {
+  color: #c6190d;
+  background-color:#c6190d16;
+}
+
+.high {
+  color: #e5372b;
+  background-color: #e5372b16;
+}
+
+.medium {
+  color: #eba622;
+  background-color: #eba62216;
+}
+
+.low {
+  color: #08b94e;
+  background-color: #08b94f16;
 }
 
 .ip-info {
@@ -102,7 +120,7 @@ table {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .table-wrapper {
     width: 100%;
     overflow-x: scroll;

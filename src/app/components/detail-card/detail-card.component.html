@@ -48,7 +48,7 @@
           </div>
           <div class="flex">
             <img src="images/receipt-text.svg" alt="receipt text" />
-            <span>Lorem: Loremipsum Loremipsum</span>
+            <span class="b-700">Lorem: Loremipsum Loremipsum</span>
             <span class="pill-purple">
               1.2.3.4
             </span>
@@ -57,7 +57,7 @@
             <span class="pill-purple">
               1.2.3.4
             </span>
-            <span>Loremipsum</span>
+            <span class="b-700">Loremipsum</span>
             <span class="pill-purple">
               1.2.3.4
             </span>
@@ -79,7 +79,7 @@
           </div>
           <div class="flex">
             <img src="images/receipt-text.svg" alt="receipt text" />
-            <span>Lorem: Loremipsum Loremipsum</span>
+            <span class="b-700">Lorem: Loremipsum Loremipsum</span>
             <span class="pill-purple">
               1.2.3.4
             </span>
@@ -88,7 +88,7 @@
             <span class="pill-purple">
               1.2.3.4
             </span>
-            <span>Loremipsum</span>
+            <span class="b-700">Loremipsum</span>
             <span class="pill-purple">
               1.2.3.4
             </span>
@@ -118,13 +118,13 @@
             </div>
             <div class="flex">
               <img src="images/receipt-text.svg" alt="receipt text" />
-              <span>Lorem:</span>
+              <span class="b-700">Lorem:</span>
               <span class="pill-yellow">
                 Lorem “ipsum"
               </span>
             </div>
             <div class="flex">
-              <span>Lorem:</span>
+              <span class="b-700">Lorem:</span>
               <span class="pill-blue">
                 lorem 1234,5678
               </span>
@@ -146,13 +146,13 @@
             </div>
             <div class="flex">
               <img src="images/receipt-text.svg" alt="receipt text" />
-              <span>Lorem:</span>
+              <span class="b-700">Lorem:</span>
               <span class="pill-yellow">
                 Lorem “ipsum"
               </span>
             </div>
             <div class="flex">
-              <span>Lorem:</span>
+              <span class="b-700">Lorem:</span>
               <span class="pill-blue">
                 lorem 1234,5678
               </span>
@@ -182,7 +182,7 @@
   <div class="chart-wrapper">
     <app-asset-table [tableData]="tableData" />
 
-    <app-chart />
+    <app-chart [chartData]="tableData" />
   </div>
 
 </section>

@@ -3,18 +3,30 @@
 
   <div class="risk-wrapper">
     <div class="legend">
-      @for (legendItem of legend; track $index) {
       <div>
-        <span class="dot"
-          [ngClass]="{'critical': legendItem.status === ASSET_STATUS.CRITICAL, 'high': legendItem.status === ASSET_STATUS.HIGH, 'medium': legendItem.status === ASSET_STATUS.MEDIUM, 'low': legendItem.status === ASSET_STATUS.LOW}"></span>
-        <span class="risk">{{legendItem.riskNumber}}</span>
-        <span class="status">{{legendItem.status}}</span>
+        <span class="dot critical"></span>
+        <span class="risk">{{getTotal(ASSET_STATUS.CRITICAL)}}</span>
+        <span class="status">{{ASSET_STATUS.CRITICAL}}</span>
       </div>
-      }
+      <div>
+        <span class="dot high"></span>
+        <span class="risk">{{getTotal(ASSET_STATUS.HIGH)}}</span>
+        <span class="status">{{ASSET_STATUS.HIGH}}</span>
+      </div>
+      <div>
+        <span class="dot medium"></span>
+        <span class="risk">{{getTotal(ASSET_STATUS.MEDIUM)}}</span>
+        <span class="status">{{ASSET_STATUS.MEDIUM}}</span>
+      </div>
+      <div>
+        <span class="dot low"></span>
+        <span class="risk">{{getTotal(ASSET_STATUS.LOW)}}</span>
+        <span class="status">{{ASSET_STATUS.LOW}}</span>
+      </div>
     </div>
 
     <div class="donut">
-      <span>{{total}}</span>
+      <span>{{chartData.length}}</span>
     </div>
   </div>
 </div>

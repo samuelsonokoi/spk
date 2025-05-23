@@ -1,7 +1,7 @@
-<div class="remidiation-wrapper">
+<div class="remidiation-wrapper" (click)="toggleDescriptionVisibility()" (keyup)="toggleDescriptionVisibility()">
   <span>{{server.title}}</span>
 
-  <div class="remidiation-box" (click)="toggleDescriptionVisibility()" (keyup)="toggleDescriptionVisibility()">
+  <div class="remidiation-box">
     <div class="server-wrapper">
       <img [src]="server.icon" alt="server" />
       <div class="server-data">

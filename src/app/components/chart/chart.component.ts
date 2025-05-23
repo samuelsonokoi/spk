@@ -1,37 +1,19 @@
-import { Component } from '@angular/core';
-import { ChartLegend } from '../../core/models/chart-lengend.model';
+import { Component, Input } from '@angular/core';
 import { ASSET_STATUS } from '../../core/constants/asset-status.constants';
-import { NgClass } from '@angular/common';
+import { Asset } from '../../core/models/asset.model';
 
 @Component({
   selector: 'app-chart',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   templateUrl: './chart.component.html',
   styleUrl: './chart.component.scss',
 })
 export class ChartComponent {
-  legend: ChartLegend[] = [
-    {
-      riskNumber: 2,
-      status: ASSET_STATUS.CRITICAL,
-    },
-    {
-      riskNumber: 0,
-      status: ASSET_STATUS.HIGH,
-    },
-    {
-      riskNumber: 0,
-      status: ASSET_STATUS.MEDIUM,
-    },
-    {
-      riskNumber: 0,
-      status: ASSET_STATUS.LOW,
-    },
-  ];
+  @Input({ required: true }) chartData!: Asset[];
   ASSET_STATUS = ASSET_STATUS;
-  total = this.legend.reduce(
-    (accumulator, current) => accumulator + current.riskNumber,
-    0
-  );
+
+  getTotal = (riskBadge: string) => {
+    return this.chartData.filter((data) => data.riskBadge === riskBadge).length;
+  };
 }

@@ -33,12 +33,11 @@ aside {
     border-radius: 8px;
     padding: 10px 12px;
     border: 1px solid transparent;
-    transition: all 0.5ms linear;
+    transition: all 0.1ms linear;
 
     &:hover {
-      color: #000;
       cursor: pointer;
-      background-color: #E9FAF0;
+      background-color: #fafafa;
     }
   }
 }
@@ -136,7 +135,7 @@ aside {
   align-items: center;
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
 
   &:hover {
     cursor: pointer;
@@ -148,8 +147,24 @@ aside {
   } 
 }
 
-@media only screen and (max-width: 600px) {
-  aside { display: none; }
+.logo {
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+
+.block {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  aside { 
+    display: none; 
+
+    .collapseButton { display: none; }
+  }
 
   .mobile-menu-wrapper { display: block; }
 }

@@ -23,7 +23,37 @@ export class DetailCardComponent {
       image: 'images/server-ip.svg',
       name: 'Loremipsumdolorsit002',
       ipAddress: '192.168.1.2',
-      riskBadge: ASSET_STATUS.CRITICAL,
+      riskBadge: ASSET_STATUS.LOW,
+    },
+    {
+      image: 'images/server-ip.svg',
+      name: 'Loremipsumdolorsit002',
+      ipAddress: '192.168.1.2',
+      riskBadge: ASSET_STATUS.HIGH,
+    },
+    {
+      image: 'images/server-ip.svg',
+      name: 'Loremipsumdolorsit002',
+      ipAddress: '192.168.1.2',
+      riskBadge: ASSET_STATUS.MEDIUM,
+    },
+    {
+      image: 'images/server-ip.svg',
+      name: 'Loremipsumdolorsit003',
+      ipAddress: '192.168.1.3',
+      riskBadge: ASSET_STATUS.LOW,
+    },
+    {
+      image: 'images/server-ip.svg',
+      name: 'Loremipsumdolorsit004',
+      ipAddress: '192.168.1.4',
+      riskBadge: ASSET_STATUS.LOW,
+    },
+    {
+      image: 'images/server-ip.svg',
+      name: 'Loremipsumdolorsit004',
+      ipAddress: '192.168.1.4',
+      riskBadge: ASSET_STATUS.MEDIUM,
     },
   ];
 }

@@ -17,7 +17,8 @@
       </td>
       <td>
         @if (asset.riskBadge) {
-        <span class="pill">{{asset.riskBadge}}</span>
+        <span class="pill"
+          [ngClass]="{'critical': asset.riskBadge === ASSET_STATUS.CRITICAL, 'high': asset.riskBadge === ASSET_STATUS.HIGH, 'low': asset.riskBadge === ASSET_STATUS.LOW, 'medium': asset.riskBadge === ASSET_STATUS.MEDIUM}">{{asset.riskBadge}}</span>
         }
       </td>
     </tr>

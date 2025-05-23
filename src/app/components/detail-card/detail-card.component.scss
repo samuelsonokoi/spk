@@ -49,7 +49,7 @@ h3 {
       border-radius: 20px;
       padding: 20px 30px 146px 30px;
       box-shadow: 0px 2px 2px 2px #00000029;
-      width: 460px;
+      width: auto;
       height: 168px;
       bottom: -8rem;
       left: 0rem;
@@ -120,7 +120,7 @@ h3 {
       border-radius: 20px;
       padding: 10px 16px;
       box-shadow: 0px 4px 4px 0px #00000040;
-      width: 362px;
+      width: auto;
       height: 121.69px;
       bottom: -5rem;
       left: 3rem;
@@ -135,7 +135,6 @@ h3 {
 
         span {
           color: #525d73;
-          font-weight: 600;
           font-size: 13px;
           line-height: 13.5px;
           letter-spacing: 0px;
@@ -208,7 +207,7 @@ h3 {
       border-radius: 20px;
       padding: 10px 16px;
       box-shadow: 0px 4px 4px 0px #00000040;
-      width: 362px;
+      width: auto;
       height: 121.69px;
       bottom: -5rem;
       left: 11rem;
@@ -223,7 +222,6 @@ h3 {
 
         span {
           color: #525d73;
-          font-weight: 600;
           font-size: 13px;
           line-height: 13.5px;
           letter-spacing: 0px;
@@ -338,10 +336,10 @@ h3 {
       border-radius: 20px;
       padding: 10px 16px;
       box-shadow: 0px 4px 4px 0px #00000040;
-      width: 362px;
+      width: auto;
       height: 121.69px;
       top: -1.5rem;
-      left: 13.5rem;
+      right: 9.3rem;
 
       & > div {
         display: flex;
@@ -367,7 +365,6 @@ h3 {
           }
 
           span {
-            font-weight: 600;
             font-size: 13px;
             line-height: 13.5px;
             letter-spacing: 0px;
@@ -378,7 +375,6 @@ h3 {
 
         span {
           color: #525d73;
-          font-weight: 600;
           font-size: 13px;
           line-height: 13.5px;
           letter-spacing: 0px;
@@ -418,7 +414,6 @@ h3 {
           font-weight: 600;
           font-size: 13px;
           line-height: 22px;
-          letter-spacing: 1%;
           text-transform: capitalize;
           width: 111px;
           border-radius: 6px;
@@ -435,7 +430,6 @@ h3 {
           font-weight: 600;
           font-size: 13px;
           line-height: 22px;
-          letter-spacing: 1%;
           text-transform: capitalize;
           width: 127px;
           border-radius: 6px;
@@ -459,10 +453,10 @@ h3 {
       border-radius: 20px;
       padding: 10px 16px;
       box-shadow: 0px 4px 4px 0px #00000040;
-      width: 362px;
+      width: auto;
       height: 121.69px;
-      top: 6rem;
-      left: 13.5rem;
+      top: 7rem;
+      right: 10rem;
 
       & > div {
         display: flex;
@@ -488,7 +482,6 @@ h3 {
           }
 
           span {
-            font-weight: 600;
             font-size: 13px;
             line-height: 13.5px;
             letter-spacing: 0px;
@@ -499,7 +492,6 @@ h3 {
 
         span {
           color: #525d73;
-          font-weight: 600;
           font-size: 13px;
           line-height: 13.5px;
           letter-spacing: 0px;
@@ -539,7 +531,6 @@ h3 {
           font-weight: 600;
           font-size: 13px;
           line-height: 22px;
-          letter-spacing: 1%;
           text-transform: capitalize;
           width: 111px;
           border-radius: 6px;
@@ -556,7 +547,6 @@ h3 {
           font-weight: 600;
           font-size: 13px;
           line-height: 22px;
-          letter-spacing: 1%;
           text-transform: capitalize;
           width: 127px;
           border-radius: 6px;
@@ -624,7 +614,11 @@ h3 {
   gap: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+.b-700 {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
   section {
     padding: 15px;
     display: flex;
@@ -637,12 +631,27 @@ h3 {
       overflow: scroll;
       margin-bottom: 10px;
       height: auto;
+      overflow-y: scroll;
     }
 
     .chart-wrapper {
       overflow-x: scroll;
       display: flex;
       flex-direction: column;
+    }
+
+    .fifth {
+      .section {
+        .fifth-card {
+          right: -16.7rem;
+          top: 0;
+        }
+
+        .sixth-card {
+          right: -16.7rem;
+          top: 8rem;
+        }
+      }
     }
   }
 }

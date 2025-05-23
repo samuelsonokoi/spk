@@ -14,6 +14,11 @@ export class SidebarComponent {
   @Input({ required: true }) bottomSidebarMenuItems!: SidebarLinks[];
   sidebarCollapsed = false;
 
-  toggleSidebarVisibility = () =>
+  toggleSidebarCollapse = () =>
     (this.sidebarCollapsed = !this.sidebarCollapsed);
+
+  showSideBar = () => {
+    const sidebar = document.getElementById('sidebar') as HTMLElement;
+    sidebar.classList.toggle('block');
+  };
 }
