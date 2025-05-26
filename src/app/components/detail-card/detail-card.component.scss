@@ -176,7 +176,7 @@ h3 {
         background-color: #f2edff;
         color: #6236cc;
         font-family: "IBM Plex Mono", monospace;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 13px;
         line-height: 22px;
         width: 64px;
@@ -263,7 +263,7 @@ h3 {
         background-color: #f2edff;
         color: #6236cc;
         font-family: "IBM Plex Mono", monospace;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 13px;
         line-height: 22px;
         width: 64px;
@@ -413,7 +413,7 @@ h3 {
           background-color: #fff9ed;
           color: #eba622;
           font-family: "IBM Plex Mono", monospace;
-          font-weight: 600;
+          font-weight: 500;
           font-size: 13px;
           line-height: 22px;
           text-transform: capitalize;
@@ -429,7 +429,7 @@ h3 {
           background-color: #ecf5ff;
           color: #0053b5;
           font-family: "IBM Plex Mono", monospace;
-          font-weight: 600;
+          font-weight: 500;
           font-size: 13px;
           line-height: 22px;
           text-transform: capitalize;
@@ -530,7 +530,7 @@ h3 {
           background-color: #fff9ed;
           color: #eba622;
           font-family: "IBM Plex Mono", monospace;
-          font-weight: 600;
+          font-weight: 500;
           font-size: 13px;
           line-height: 22px;
           text-transform: capitalize;
@@ -546,7 +546,7 @@ h3 {
           background-color: #ecf5ff;
           color: #0053b5;
           font-family: "IBM Plex Mono", monospace;
-          font-weight: 600;
+          font-weight: 500;
           font-size: 13px;
           line-height: 22px;
           text-transform: capitalize;
@@ -630,9 +630,8 @@ h3 {
     .asset-flow {
       padding: 8px 10px 15px 10px;
       display: block;
-      overflow: scroll;
       margin-bottom: 10px;
-      height: auto;
+      height: 100%;
       overflow-y: scroll;
     }
 
