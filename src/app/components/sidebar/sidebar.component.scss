@@ -7,7 +7,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0px 16px 18px 0px #0000000F;
+  box-shadow: 0px 16px 18px 0px #0000000f;
   position: relative;
 
   &.collapsed {
@@ -18,7 +18,8 @@ aside {
     }
   }
 
-  .nav-top ul, .sidebar-bottom ul {
+  .nav-top ul,
+  .sidebar-bottom ul {
     gap: 6px;
     display: flex;
     flex-direction: column;
@@ -43,7 +44,7 @@ aside {
 }
 
 .active {
-  background-color: #E9FAF0;
+  background-color: #e9faf0;
   color: #000;
 }
 
@@ -91,7 +92,7 @@ aside {
     p {
       width: fit-content;
       font-size: 15px;
-      color: #525D73;
+      color: #525d73;
     }
   }
 }
@@ -103,9 +104,9 @@ aside {
   border-radius: 100%;
   padding: 9px 12px;
   padding-left: 12px;
-  border: 3px solid #F0F1F3;
-  background-color: #00732E;
-  box-shadow: 0px 1px 4px 0px #0C0C0D0D;
+  border: 3px solid #f0f1f3;
+  background-color: #00732e;
+  box-shadow: 0px 1px 4px 0px #0c0c0d0d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,8 +130,8 @@ aside {
   display: none;
 }
 
-.hamburger-menu { 
-  display: flex; 
+.hamburger-menu {
+  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -140,11 +141,11 @@ aside {
   &:hover {
     cursor: pointer;
   }
-  
+
   img {
     width: 2rem;
     height: 1.4rem;
-  } 
+  }
 }
 
 .logo {
@@ -154,17 +155,21 @@ aside {
 }
 
 .block {
-  display: block;
+  display: flex;
   position: absolute;
   top: 0;
 }
 
 @media only screen and (max-width: 768px) {
-  aside { 
-    display: none; 
+  aside {
+    display: none;
 
-    .collapseButton { display: none; }
+    .collapseButton {
+      display: none;
+    }
   }
 
-  .mobile-menu-wrapper { display: block; }
+  .mobile-menu-wrapper {
+    display: block;
+  }
 }
