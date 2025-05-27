@@ -613,6 +613,7 @@ h3 {
 .chart-wrapper {
   display: flex;
   gap: 20px;
+  overflow-y: scroll;
 }
 
 .b-700 {
