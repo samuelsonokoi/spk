@@ -1,0 +1,23 @@
+[debug] [2025-05-27T18:36:36.049Z] ----------------------------------------------------------------------
+[debug] [2025-05-27T18:36:36.052Z] Command:       /Users/samuelsonokoi/.nvm/versions/node/v22.13.1/bin/node /Users/samuelsonokoi/.nvm/versions/node/v22.13.1/bin/firebase deploy --only hosting
+[debug] [2025-05-27T18:36:36.053Z] CLI Version:   14.1.0
+[debug] [2025-05-27T18:36:36.053Z] Platform:      darwin
+[debug] [2025-05-27T18:36:36.053Z] Node Version:  v22.13.1
+[debug] [2025-05-27T18:36:36.053Z] Time:          Tue May 27 2025 19:36:36 GMT+0100 (West Africa Standard Time)
+[debug] [2025-05-27T18:36:36.053Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-27T18:36:36.220Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-27T18:36:36.220Z] > authorizing via signed-in user (samuelsonokoi@gmail.com)
+[debug] [2025-05-27T18:36:36.220Z] [iam] checking project spk-fe for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-05-27T18:36:36.221Z] Checked if tokens are valid: true, expires at: 1748374395367
+[debug] [2025-05-27T18:36:36.222Z] Checked if tokens are valid: true, expires at: 1748374395367
+[debug] [2025-05-27T18:36:36.222Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/spk-fe:testIamPermissions [none]
+[debug] [2025-05-27T18:36:36.222Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/spk-fe:testIamPermissions x-goog-quota-user=projects/spk-fe
+[debug] [2025-05-27T18:36:36.223Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spk-fe:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-27T18:36:41.073Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/spk-fe:testIamPermissions 200
+[debug] [2025-05-27T18:36:41.074Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spk-fe:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-27T18:36:41.074Z] Checked if tokens are valid: true, expires at: 1748374395367
+[debug] [2025-05-27T18:36:41.074Z] Checked if tokens are valid: true, expires at: 1748374395367
+[debug] [2025-05-27T18:36:41.075Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/spk-fe [none]
+[debug] [2025-05-27T18:36:41.911Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/spk-fe 200
+[debug] [2025-05-27T18:36:41.911Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/spk-fe {"projectId":"spk-fe","projectNumber":"245144110641","displayName":"spk-fe","name":"projects/spk-fe","resources":{"hostingSite":"spk-fe"},"state":"ACTIVE","etag":"1_07e11687-6bcd-44a7-9700-de0e8a064d01"}
