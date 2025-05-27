@@ -75,7 +75,7 @@ table {
 
 .critical {
   color: #c6190d;
-  background-color:#c6190d16;
+  background-color: #c6190d16;
 }
 
 .high {
@@ -126,6 +126,7 @@ table {
     overflow-x: scroll;
 
     table {
+      td,
       th {
         padding: 12px;
       }
