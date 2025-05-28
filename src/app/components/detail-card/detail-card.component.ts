@@ -3,11 +3,12 @@ import { ChartComponent } from '../chart/chart.component';
 import { AssetTableComponent } from '../asset-table/asset-table.component';
 import { Asset } from '../../core/models/asset.model';
 import { ASSET_STATUS } from '../../core/constants/asset-status.constants';
+import { SidebarModule } from 'primeng/sidebar';
 
 @Component({
   selector: 'app-detail-card',
   standalone: true,
-  imports: [ChartComponent, AssetTableComponent],
+  imports: [ChartComponent, AssetTableComponent, SidebarModule],
   templateUrl: './detail-card.component.html',
   styleUrl: './detail-card.component.scss',
 })
@@ -56,4 +57,7 @@ export class DetailCardComponent {
       riskBadge: ASSET_STATUS.MEDIUM,
     },
   ];
+  drawerVisible = false;
+
+  toggleDrawer = () => (this.drawerVisible = !this.drawerVisible);
 }

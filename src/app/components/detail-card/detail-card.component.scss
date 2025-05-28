@@ -457,7 +457,7 @@ h3 {
       width: auto;
       height: 121.69px;
       top: 7rem;
-      right: 10rem;
+      right: 9.5rem;
 
       & > div {
         display: flex;
@@ -618,6 +618,122 @@ h3 {
 
 .b-700 {
   font-weight: 700;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.preview-card {
+  display: block;
+  background-color: #fafafa;
+  border-radius: 20px;
+  padding: 10px 16px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  width: 80%;
+  height: 121.69px;
+
+  & > div {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 8px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      gap: 4px;
+
+      small {
+        color: #667085;
+        font-weight: 500;
+        font-size: 9.45px;
+        line-height: 10.13px;
+        letter-spacing: 0px;
+      }
+
+      span {
+        font-size: 13px;
+        line-height: 13.5px;
+        letter-spacing: 0px;
+        text-transform: capitalize;
+        color: #525d73;
+      }
+    }
+
+    span {
+      color: #525d73;
+      font-size: 13px;
+      line-height: 13.5px;
+      letter-spacing: 0px;
+      text-transform: capitalize;
+    }
+
+    img {
+      width: 39.69px;
+      height: 39.69px;
+    }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    color: #525d73;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: capitalize;
+
+    img {
+      height: 15px;
+      width: 15px;
+    }
+
+    span {
+      display: inline-block;
+    }
+
+    .pill-yellow {
+      background-color: #fff9ed;
+      color: #eba622;
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 22px;
+      text-transform: capitalize;
+      width: 111px;
+      border-radius: 6px;
+      text-align: center;
+      margin-left: 2px;
+      display: inline-block;
+      padding: 2px 4px;
+    }
+
+    .pill-blue {
+      background-color: #ecf5ff;
+      color: #0053b5;
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 22px;
+      text-transform: capitalize;
+      width: 127px;
+      border-radius: 6px;
+      text-align: center;
+      margin-left: 2px;
+      display: inline-block;
+      padding: 2px 4px;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {

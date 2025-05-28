@@ -1,36 +1,29 @@
 <div class="table-wrapper">
-  <table>
-    <tr>
-      <th>Asset</th>
-      <th>Contextual Risk</th>
-    </tr>
-    @for (asset of tableData; track $index) {
-    <tr>
-      <td>
-        <div>
-          <img [src]="asset.image" [alt]="asset.name" />
-          <div class="ip-info">
-            <span class="title">{{asset.name}}</span>
-            <span class="description">{{asset.ipAddress}}</span>
+  <p-table [value]="tableData" [tableStyle]="{ 'min-width': '100%' }" [paginator]="true" [rows]="4">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Asset</th>
+        <th>Contextual Risk</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-asset>
+      <tr>
+        <td>
+          <div>
+            <img [src]="asset.image" [alt]="asset.name" />
+            <div class="ip-info">
+              <span class="title">{{asset.name}}</span>
+              <span class="description">{{asset.ipAddress}}</span>
+            </div>
           </div>
-        </div>
-      </td>
-      <td>
-        @if (asset.riskBadge) {
-        <span class="pill"
-          [ngClass]="{'critical': asset.riskBadge === ASSET_STATUS.CRITICAL, 'high': asset.riskBadge === ASSET_STATUS.HIGH, 'low': asset.riskBadge === ASSET_STATUS.LOW, 'medium': asset.riskBadge === ASSET_STATUS.MEDIUM}">{{asset.riskBadge}}</span>
-        }
-      </td>
-    </tr>
-    }
-    <tr>
-      <td colspan="2">
-        <div class="pagination">
-          <img src="images/chevron_left.svg" alt="left" />
-          <span>Showing 1-{{tableData.length}} of {{tableData.length}}</span>
-          <img src="images/chevron_right.svg" alt="right" />
-        </div>
-      </td>
-    </tr>
-  </table>
+        </td>
+        <td>
+          @if (asset.riskBadge) {
+          <span class="pill"
+            [ngClass]="{'critical': asset.riskBadge === ASSET_STATUS.CRITICAL, 'high': asset.riskBadge === ASSET_STATUS.HIGH, 'low': asset.riskBadge === ASSET_STATUS.LOW, 'medium': asset.riskBadge === ASSET_STATUS.MEDIUM}">{{asset.riskBadge}}</span>
+          }
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
 </div>

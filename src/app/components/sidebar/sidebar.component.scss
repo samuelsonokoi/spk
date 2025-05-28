@@ -36,9 +36,23 @@ aside {
     border: 1px solid transparent;
     transition: all 0.1ms linear;
 
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg.svg {
+        fill: #a3a9b6;
+      }
+    }
+
     &:hover {
       cursor: pointer;
       background-color: #fafafa;
+
+      svg.svg {
+        fill: #000;
+      }
     }
   }
 }

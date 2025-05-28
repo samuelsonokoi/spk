@@ -1,5 +1,5 @@
 <div class="mobile-menu-wrapper">
-  <button class="hamburger-menu" (click)="showSideBar()">
+  <button class="hamburger-menu" (click)="toggleSideBar()">
     <img src="images/burger-menu.svg" alt="burger-menu" />
   </button>
 </div>
@@ -12,7 +12,7 @@
       }
       @for (link of topSidebarMenuItems; track $index) {
       <li [ngClass]="{'active': link.active}">
-        <img [src]="link.icon" [alt]="link.label" />
+        <div [innerHTML]="sanitizeImage(link.icon)"></div>
         <span *ngIf="!sidebarCollapsed" class="sidebar-labels">{{link.label}}</span>
       </li>
       }
@@ -23,7 +23,7 @@
     <ul>
       @for (link of bottomSidebarMenuItems; track $index) {
       <li [ngClass]="{'active': link.active}">
-        <img [src]="link.icon" alt="MENU" />
+        <div [innerHTML]="sanitizeImage(link.icon)"></div>
         <span *ngIf="!sidebarCollapsed" class="sidebar-labels">{{link.label}}</span>
       </li>
       }

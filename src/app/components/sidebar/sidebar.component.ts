@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { SidebarLinks } from '../../core/models/sidebar-links.model';
 import { NgClass, NgIf } from '@angular/common';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-sidebar',
@@ -13,12 +14,14 @@ export class SidebarComponent {
   @Input({ required: true }) topSidebarMenuItems!: SidebarLinks[];
   @Input({ required: true }) bottomSidebarMenuItems!: SidebarLinks[];
   sidebarCollapsed = false;
+  sidebarVisible = false;
+
+  constructor(private sanitize: DomSanitizer) {}
 
   toggleSidebarCollapse = () =>
     (this.sidebarCollapsed = !this.sidebarCollapsed);
 
-  showSideBar = () => {
-    const sidebar = document.getElementById('sidebar') as HTMLElement;
-    sidebar.classList.toggle('block');
-  };
+  toggleSideBar = () => (this.sidebarVisible = !this.sidebarVisible);
+
+  sanitizeImage = (svg: string) => this.sanitize.bypassSecurityTrustHtml(svg);
 }

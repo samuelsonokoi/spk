@@ -103,7 +103,7 @@
         <img src="images/branch-down.svg" alt="branch down" />
       </div>
       <div class="fifth">
-        <div class="section">
+        <div class="section" (click)="toggleDrawer()" (keyup)="toggleDrawer()">
           <img src="images/server-ip.svg" alt="server ip icon" />
           <span class="label">Loremipsumdolorsit</span>
           <small>192.168.1.1</small>
@@ -131,7 +131,7 @@
             </div>
           </div>
         </div>
-        <div class="section">
+        <div class="section" (click)="toggleDrawer()" (keyup)="toggleDrawer()">
           <img src="images/server-ip.svg" alt="server ip icon" />
           <span class="label">Loremipsumdolorsit002</span>
           <small>192.168.1.2</small>
@@ -186,3 +186,30 @@
   </div>
 
 </section>
+
+<p-sidebar [(visible)]="drawerVisible">
+  <div class="preview-container">
+    <div class="preview-card">
+      <div>
+        <img src="images/server-shield-small.svg" alt="server shield small" />
+        <div>
+          <span>Loremipsumdolorsit</span>
+          <small>192.168.1.1</small>
+        </div>
+      </div>
+      <div class="flex">
+        <img src="images/receipt-text.svg" alt="receipt text" />
+        <span class="b-700">Lorem:</span>
+        <span class="pill-yellow">
+          Lorem “ipsum"
+        </span>
+      </div>
+      <div class="flex">
+        <span class="b-700">Lorem:</span>
+        <span class="pill-blue">
+          lorem 1234,5678
+        </span>
+      </div>
+    </div>
+  </div>
+</p-sidebar>
