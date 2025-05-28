@@ -21,7 +21,10 @@ export class SidebarComponent {
   toggleSidebarCollapse = () =>
     (this.sidebarCollapsed = !this.sidebarCollapsed);
 
-  toggleSideBar = () => (this.sidebarVisible = !this.sidebarVisible);
+  showSideBar = () => {
+    const sidebar = document.getElementById('sidebar') as HTMLElement;
+    sidebar.classList.toggle('block');
+  };
 
   sanitizeImage = (svg: string) => this.sanitize.bypassSecurityTrustHtml(svg);
 }
